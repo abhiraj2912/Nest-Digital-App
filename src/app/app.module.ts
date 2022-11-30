@@ -22,6 +22,10 @@ const myroute:Routes=[
   {
     path:"contact",
     component:ContactUsComponent
+  },
+  {
+    path:"adminlogin",
+    component:AdminLoginComponent
   }
 ]
 
