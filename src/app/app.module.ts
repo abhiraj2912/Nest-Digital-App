@@ -8,6 +8,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 const myroute:Routes=[
   {
@@ -30,7 +31,8 @@ const myroute:Routes=[
     HomePageComponent,
     NavbarComponent,
     AboutUsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
