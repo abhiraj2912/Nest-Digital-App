@@ -15,7 +15,9 @@ import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewFriendsComponent } from './view-friends/view-friends.component';
-import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component'
+import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
+import { AddCourseComponent } from './add-course/add-course.component';
+import { AddFriendComponent } from './add-friend/add-friend.component'
 
 const myroute:Routes=[
   {
@@ -45,6 +47,14 @@ const myroute:Routes=[
   {
     path:"viewfriend",
     component:ViewFriendsComponent
+  },
+  {
+    path:"addcourse",
+    component:AddCourseComponent
+  },
+  {
+    path:"addfriend",
+    component:AddFriendComponent
   }
 ]
 
@@ -60,7 +70,9 @@ const myroute:Routes=[
     AdminNavbarComponent,
     ViewCourseComponent,
     ViewFriendsComponent,
-    EmployeeNavbarComponent
+    EmployeeNavbarComponent,
+    AddCourseComponent,
+    AddFriendComponent
   ],
   imports: [
     BrowserModule,
