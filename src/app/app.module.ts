@@ -27,6 +27,10 @@ const myroute:Routes=[
   {
     path:"adminlogin",
     component:AdminLoginComponent
+  },
+  {
+    path:"emplogin",
+    component:EmployeeLoginComponent
   }
 ]
 
