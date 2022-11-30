@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 
 const myroute:Routes=[
   {
@@ -26,6 +27,10 @@ const myroute:Routes=[
   {
     path:"adminlogin",
     component:AdminLoginComponent
+  },
+  {
+    path:"emplogin",
+    component:EmployeeLoginComponent
   }
 ]
 
@@ -36,7 +41,8 @@ const myroute:Routes=[
     NavbarComponent,
     AboutUsComponent,
     ContactUsComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    EmployeeLoginComponent
   ],
   imports: [
     BrowserModule,
