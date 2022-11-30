@@ -13,7 +13,8 @@ import { EmployeeLoginComponent } from './employee-login/employee-login.componen
 import { FormsModule } from '@angular/forms';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ViewFriendsComponent } from './view-friends/view-friends.component'
 
 const myroute:Routes=[
   {
@@ -39,6 +40,10 @@ const myroute:Routes=[
   {
     path:"viewcourse",
     component:ViewCourseComponent
+  },
+  {
+    path:"viewfriend",
+    component:ViewFriendsComponent
   }
 ]
 
@@ -52,7 +57,8 @@ const myroute:Routes=[
     AdminLoginComponent,
     EmployeeLoginComponent,
     AdminNavbarComponent,
-    ViewCourseComponent
+    ViewCourseComponent,
+    ViewFriendsComponent
   ],
   imports: [
     BrowserModule,
