@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employee-login',
@@ -6,5 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./employee-login.component.css']
 })
 export class EmployeeLoginComponent {
+
+  username=""
+  password=""
+
+  constructor(private route:Router){}
+
+  readValues=()=>{
+    if (this.username=="1122" && this.password=="12345") {
+      this.route.navigate(['/addcourse'])
+      
+    } else {
+      alert("Something went wrong")
+    }
+
+  }
 
 }
