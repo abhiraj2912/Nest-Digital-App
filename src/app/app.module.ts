@@ -11,6 +11,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { FormsModule } from '@angular/forms';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 
 const myroute:Routes=[
   {
@@ -43,7 +44,8 @@ const myroute:Routes=[
     AboutUsComponent,
     ContactUsComponent,
     AdminLoginComponent,
-    EmployeeLoginComponent
+    EmployeeLoginComponent,
+    AdminNavbarComponent
   ],
   imports: [
     BrowserModule,
