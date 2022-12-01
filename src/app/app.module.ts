@@ -18,7 +18,8 @@ import { ViewFriendsComponent } from './view-friends/view-friends.component';
 import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
-import { EmployeeRegisterComponent } from './employee-register/employee-register.component'
+import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
+import { GalleryComponent } from './gallery/gallery.component'
 
 const myroute:Routes=[
   {
@@ -60,6 +61,10 @@ const myroute:Routes=[
   {
     path:"empregister",
     component:EmployeeRegisterComponent
+  },
+  {
+    path:"gallery",
+    component:GalleryComponent
   }
 ]
 
@@ -78,7 +83,8 @@ const myroute:Routes=[
     EmployeeNavbarComponent,
     AddCourseComponent,
     AddFriendComponent,
-    EmployeeRegisterComponent
+    EmployeeRegisterComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
